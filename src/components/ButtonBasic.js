@@ -1,15 +1,19 @@
 import React from 'react'
+import TextContext from '../contextVariable/TextContext'
 
-function ButtonBasic({width,height,backgroundColor,color,text}) {
+function ButtonBasic({width,height,backgroundColor,color}) {
     const buttonStyle = {
         width,
         height,
         backgroundColor,
         color
     }
+    // const txt = React.useContext(TextContext)    
     return (
         <div>
-            <button style={buttonStyle}>{text}</button>
+            <TextContext.Consumer>
+            {theme => <button style={buttonStyle}>{theme.text}</button>}
+            </TextContext.Consumer>
         </div>
     )
 }
