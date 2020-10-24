@@ -1,15 +1,15 @@
 import React from 'react'
 
-function ButtonBasic(props) {
+function ButtonBasic({width,height,backgroundColor,color,text}) {
     const buttonStyle = {
-        width: props.width,
-        height: props.height,
-        backgroundColor: props.backgroundColor,
-        color:props.color
+        width,
+        height,
+        backgroundColor,
+        color
     }
     return (
         <div>
-            <button style={buttonStyle}>{props.text}</button>
+            <button style={buttonStyle}>{text}</button>
         </div>
     )
 }

@@ -8,8 +8,8 @@ function App() {
          width = "100px"
          height= "50px"
          backgroundColor = "lightblue"
-         color="blue"
-         text="OK"
+         color="red"
+         text="Click Me"
       />  
     </div>
   );
